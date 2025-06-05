@@ -35,6 +35,7 @@ class GetWeatherTool(Tool):
 
         # Retrieve API key from environment
         api_key = os.getenv("OPENWEATHER_API_KEY")
+        print(f"Using OpenWeatherMap API key: {api_key}")  # Debugging line
         if not api_key:
             return (
                 "Error: OpenWeatherMap API key not found. "
